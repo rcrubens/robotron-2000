@@ -1,7 +1,9 @@
 const robotron = document.querySelector('#robotron')
 
-robotron.addEventListener('click', dizOi)
+robotron.addEventListener('click', (evento) => {
+    console.log(evento)
+})
 
-function dizOi() {
-    console.log('oi')    
+function dizOi(nome) {
+    console.log('Oi, ' + nome)    
 }
